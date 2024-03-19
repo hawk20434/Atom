@@ -6,10 +6,8 @@
 
 
 
-- sudo apt install build-essential 
-- sudo apt install libssl-dev
-- sudo apt install libffi-dev
-- sudo apt install python3
-- sudo apt install python3-pip
-- sudo apt install libsasl2-dev
-- sudo apt install libldap2-dev
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release

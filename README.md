@@ -6,4 +6,6 @@
 
 
 
-sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo cp /run/user/1000/doc/docker-compose-non-dev.yml /home/mgpu/superset/docker/docker-compose-non-dev.yml
+
+sudo docker-compose -f /home/mgpu/superset/docker/docker-compose-non-dev.yml pull

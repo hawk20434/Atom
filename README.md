@@ -9,3 +9,6 @@
 sudo cp /run/user/1000/doc/docker-compose-non-dev.yml /home/mgpu/superset/docker/docker-compose-non-dev.yml
 
 sudo docker-compose -f /home/mgpu/superset/docker/docker-compose-non-dev.yml pull
+
+
+sudo chmod +r /run/user/1000/doc/docker-compose-non-dev.yml

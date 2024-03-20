@@ -6,9 +6,10 @@
 
 
 
-sudo cp /run/user/1000/doc/docker-compose-non-dev.yml /home/mgpu/superset/docker/docker-compose-non-dev.yml
+git clone https://github.com/abhioncbr/docker-superset.git
 
-sudo docker-compose -f /home/mgpu/superset/docker/docker-compose-non-dev.yml pull
+cd docker-superset
 
+docker build -t abhioncbr/docker-superset:0.29.0rc4 --build-arg SUPERSET_VERSION=0.29.0rc4 -f docker-files/Dockerfile .
 
-sudo chmod +r /run/user/1000/doc/docker-compose-non-dev.yml
+docker run -p 8088:8088 abhioncbr/docker-superset:0.29.0rc4
